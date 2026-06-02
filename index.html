@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Dynasty Agency </title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">Loading Dev Dynasty...</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button class="btn" onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+
+  <div class="logo">Dev Dynasty</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div>
+    <span class="menu-btn">☰</span>
+    <span class="toggle-mode">🌙</span>
+    <span class="login-btn" onclick="openLogin()">Login</span>
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <h1>Build Your Digital Empire With Dev Dynasty</h1>
+
+    <p>
+      Software Development, AI Solutions, Web Design & Digital Marketing
+    </p>
+
+    <a href="#services" class="btn">Explore</a>
+
+    <a href="#contact" class="btn secondary">Contact</a>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="about-content">
+
+      <div>
+
+        <h3>We Create Future Ready Solutions</h3>
+
+        <p>
+          Dev Dynasty is a modern technology agency providing premium digital
+          services including software development, AI solutions, cloud systems,
+          branding and digital marketing.
+        </p>
+
+        <div class="stats">
+
+          <div class="stat-box">
+            <h2>150+</h2>
+            <p>Projects</p>
+          </div>
+
+          <div class="stat-box">
+            <h2>100+</h2>
+            <p>Clients</p>
+          </div>
+
+          <div class="stat-box">
+            <h2>10+</h2>
+            <p>Countries</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="About Image">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Services</h2>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Responsive modern websites with premium UI/UX design.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile Apps</h3>
+        <p>Android & iOS mobile application development solutions.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-robot"></i>
+        <h3>AI Solutions</h3>
+        <p>Artificial Intelligence systems and smart automation tools.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Digital Marketing</h3>
+        <p>SEO, branding, social media and marketing strategies.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Services</h3>
+        <p>Cloud hosting, deployment and scalable infrastructure.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-palette"></i>
+        <h3>UI/UX Design</h3>
+        <p>Beautiful interfaces and modern user experiences.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Portfolio</h2>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Project">
+
+        <div class="portfolio-content">
+          <h3>E-Commerce Platform</h3>
+          <p>Modern online shopping system with secure payment integration.</p>
+        </div>
+
+      </div>
+
+      <div class="portfolio-card">
+
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Project">
+
+        <div class="portfolio-content">
+          <h3>AI Dashboard</h3>
+          <p>Analytics dashboard powered with AI automation.</p>
+        </div>
+
+      </div>
+
+      <div class="portfolio-card">
+
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Project">
+
+        <div class="portfolio-content">
+          <h3>Marketing System</h3>
+          <p>Social media marketing and campaign management platform.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Team</h2>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team">
+        <h3>John Smith</h3>
+        <p>CEO & Founder</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Team">
+        <h3>Sarah Lee</h3>
+        <p>UI/UX Designer</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Team">
+        <h3>Michael Brown</h3>
+        <p>AI Engineer</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Client Testimonials</h2>
+    </div>
+
+    <div class="testimonial-box">
+
+      <p>
+        “Dev Dynasty completely transformed our business with a premium website and marketing strategy.”
+      </p>
+
+      <h4>- Alex Johnson</h4>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <h2>Contact Us</h2>
+
+      <p>
+        We are here to help you. Send us a message anytime.
+      </p>
+
+    </div>
+
+    <br>
+
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+      <form
+        class="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+
+        <input type="hidden" name="form-name" value="contact">
+
+        <div class="input-box">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          >
+        </div>
+
+        <div class="input-box">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          >
+        </div>
+
+        <div class="input-box">
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn">
+          Send Message
+        </button>
+
+      </form>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+
+        <h3>Get In Touch</h3>
+
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <span>hamidkalhoro1292@gmail.com</span>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <span>03136929917</span>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-location-dot"></i>
+          <span>Hyderabad Sindh Pakistan</span>
+        </div>
+
+        <div class="social">
+
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="container">
+    <p>© 2026 Dev Dynasty Agency. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/923136929917">
+  💬
+</a>
+
+<!-- JAVASCRIPT -->
+<script>
+
+/* LOADER */
+window.onload = () => {
+  document.getElementById("loader").style.display = "none";
+};
+
+/* MENU */
+document.querySelector(".menu-btn").onclick = () => {
+  document.querySelector("nav").classList.toggle("active");
+};
+
+/* DARK MODE */
+document.querySelector(".toggle-mode").onclick = () => {
+  document.body.classList.toggle("light");
+};
+
+/* FORM ALERT */
+document.querySelector(".contact-form").onsubmit = () => {
+  alert("Message Sent Successfully");
+};
+
+/* SCROLL ANIMATION */
+window.addEventListener("scroll", () => {
+
+  document
+    .querySelectorAll(".service-card, .portfolio-card, .team-card")
+    .forEach(el => {
+
+      if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
+      }
+
+    });
+
+});
+
+/* LOGIN MODAL */
+function openLogin() {
+
+  document.getElementById("loginModal").style.display = "flex";
+
+}
+
+/* LOGIN */
+function login() {
+
+  let u = document.getElementById("username").value;
+
+  let p = document.getElementById("password").value;
+
+  if (u === "admin" && p === "1234") {
+
+    alert("Login Successful");
+
+    document.getElementById("loginModal").style.display = "none";
+
+  } else {
+
+    alert("Invalid Login");
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
+
+
+
