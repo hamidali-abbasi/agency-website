@@ -42,6 +42,11 @@ This is a modern and responsive agency website developed for Dev Dynasty Agency.
 Hamid Ali Abbasi
 
 ## License
+This project is created for educational and internship submission purposes
+
+
+
+
 
 This project is created for educational and internship submission purposes.
 
